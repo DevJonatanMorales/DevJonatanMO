@@ -14,12 +14,12 @@ btnTheme.addEventListener('click', () => {
     document.getElementById('body').classList.toggle('theme');
 
     if (isBtnCheckbox.checked == true) {
-        btnTheme.innerText = themeLight;
+        // btnTheme.innerText = themeLight;
         document.getElementById("iconMenu").style.filter = "invert(1)"
         iconTheme.classList.remove('fa-moon')
         iconTheme.classList.add('fa-sun')
     } else {
-        btnTheme.innerText = themeDark;
+        // btnTheme.innerText = themeDark;
         document.getElementById("iconMenu").style.filter = "invert(0)"
         iconTheme.classList.remove('fa-sun')
         iconTheme.classList.add('fa-moon')

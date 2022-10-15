@@ -1,9 +1,10 @@
 :root {
   --bg-body: #192229;
-  --primary-colors: #52A5E0;
+  --primary-colors: hsl(13deg, 68%, 61%);
   --color-title: #EFF3F5;
   --color-text: #C8CDD0;
   --bg-container: #212E36;
+  --bg-containe: #1F2A33;
   --border-colors: #2A3B47;
   --c__claro: #A0A7AC;
 }
@@ -14,10 +15,11 @@
 
 body.theme {
   --bg-body: #FBFBDE;
-  --primary-colors: #1083D6;
+  --primary-colors: hsl(13deg, 68%, 61%);
   --color-title: #2A3B47;
   --color-text: #697477;
   --bg-container: #FFFFFF;
+  --bg-containe: #E0E0C5;
   --border-colors: #EFF3F5;
   --c__claro: #A0A7AC;
 }
@@ -96,7 +98,6 @@ body {
   font-size: 16px;
 }
 .navbar__link:hover {
-  transition: 0.3s;
   border-bottom: 2px solid var(--primary-colors);
   color: var(--primary-colors);
 }
@@ -153,8 +154,8 @@ body {
     width: 100%;
   }
 }
-.section__header {
-  padding: 2rem;
+.header {
+  padding: 5rem 2rem;
   border-radius: 12px;
   margin-top: 4rem;
   margin-left: auto;
@@ -165,7 +166,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.section__header__title {
+.header__title {
   font-size: 38px;
   color: var(--primary-colors);
   font-family: "Barlow", sans-serif;
@@ -173,7 +174,7 @@ body {
   font-style: italic;
   letter-spacing: 0.2rem;
 }
-.section__header__subTitulo {
+.header__subTitulo {
   display: block;
   font-size: 30px;
   color: var(--color-title);
@@ -182,30 +183,103 @@ body {
   font-style: normal;
   letter-spacing: 0rem;
 }
-
-.avatar {
+.header__avatar {
   width: 300px;
   border-radius: 50%;
+  margin-bottom: 2rem;
   border: 5px solid var(--primary-colors);
 }
 
-.section__SobreMi {
+.about {
   background-color: var(--bg-container);
-  padding: 2rem 3rem;
+  padding: 5rem 3rem;
   display: flex;
 }
-.section__SobreMi__title {
+.about__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about__title {
   color: var(--color-title);
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 28px;
+  margin-top: 0;
 }
-.section__SobreMi__paragrahp {
+.about__paragrahp {
+  margin-top: 0;
   color: var(--color-text);
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
-.section__SobreMi__img {
-  height: 400px;
+.about__img {
+  max-height: 400px;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .about__container {
+    width: 100%;
+  }
+  .about__img {
+    width: 80%;
+  }
+}
+.skills {
+  padding: 5rem 3rem;
+  color: var(--color-text);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-containe);
+}
+.skills__container {
+  width: 50%;
+}
+.skills__title {
+  color: var(--color-title);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 0;
+}
+.skills__img {
+  max-height: 400px;
+  width: 50%;
+}
+
+.nav {
+  width: 250px;
+}
+.nav__items {
+  list-style: none;
+  margin: 0.5rem;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--primary-colors);
+}
+
+.projects {
+  background-color: var(--bg-container);
+  padding: 5rem 3rem;
+  display: flex;
+}
+
+.footer {
+  padding: 5rem 3rem;
 }/*# sourceMappingURL=styles.css.map */

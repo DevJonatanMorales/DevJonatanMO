@@ -42,19 +42,13 @@
 
       <ul id="items" class="navbar__items">
         <li class="navbar__item">
-          <a class="navbar__link" href="#yo">Sobre mi</a>
+          <a class="navbar__link" href="#about">Sobre mi</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="#habilidades">Habilidades</a>
+          <a class="navbar__link" href="#habilidades">Conocimientos</a>
         </li>
         <li class="navbar__item">
           <a class="navbar__link" href="#proyectos">Proyectos</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#YouTube">YouTube</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#formacion">Formación</a>
         </li>
         <li class="navbar__item">
           <a class="navbar__link" href="#contactame">Contáctame</a>
@@ -63,18 +57,18 @@
     </nav>
 
     
-    <header id="home" class="section__header">
-      <img class="avatar" src="./assets/images/YO.jpeg" alt="Foto de perfil" >
-      <h2 class="section__header__title">
-        Jonatan Isai Morales Orellana
-        <span class="section__header__subTitulo"> Developer Front-End | Junior </span>
+    <header id="header" class="header">
+      <img class="header__avatar" src="./assets/images/YO.jpeg" alt="Foto de perfil" >
+      <h2 class="header__title">
+        Jonatan Isai <wbr> Morales Orellana <wbr>
+        <span class="header__subTitulo"> Developer <wbr> Front-End | Junior </span>
       </h2>
     </header>
 
-    <section id="yo" class="section__SobreMi">
-      <div class="section__SobreMi__container">
-        <h2 class="section__SobreMi__title">Sobre Mi</h2>
-        <p class="section__SobreMi__paragrahp">
+    <section id="about" class="about">
+      <div class="about__container">
+        <h2 class="about__title">Sobre Mi</h2>
+        <p class="about__paragrahp">
           Estudiante en ing. en sistemas y redes informáticas, busco
           oportunidad para adquirir experiencia en el desarrollo front-end o
           desarrollo de aplicaciones moviles para android; Busco siempre
@@ -82,84 +76,101 @@
           manera posible, siendo respoble y puntual.
         </p>
       </div>
-      <img class="section__SobreMi__img" src="./assets/images/undraw_programming.svg" alt="undraw programming" >
+      <img class="about__img" src="./assets/images/undraw_programming.svg" alt="undraw programming" >
       <!-- <a href="#">Descargar curriculom</a> -->
     </section>
 
-    <section id="habilidades" class="section__Habilidades">
-      <h2>Habilidades</h2>
-      <div class="blandas">
-        <h3>Habilidades Blandas</h3>
-        <ul></ul>
-      </div>
+    <section id="skills" class="skills">
 
-      <div class="duras">
-        <h3>Habilidades Duras</h3>
+      <div class="skills__container">
+        <h3 class="skills__title">Conocimientos</h3>
 
-        <dl>
-          <dt>Leguajes</dt>
-          <dd>HTML5, CSS3, JavaScript</dd>
-          <dt>Base de Datos</dt>
-          <dd>MySQL</dd>
-        </dl>
         <ul class="nav">
-          <li class="nav__item">
-            <a class="links" href="#">Leguajes</a>
-            <ul class="nav">
+          <li class="nav__items">
+            <a class="nav__links" href="#">
+              Leguajes 
+              <span> 
+                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+
+            <ul class="nav__children">
               <li class="nav__item">
-                <a class="links" href="#">HTML5</a>
+                <a class="nav__link" href="#">HTML5</a>
               </li>
               <li class="nav__item">
-                <a class="links" href="#">CSS3</a>
+                <a class="nav__link" href="#">CSS3</a>
               </li>
               <li class="nav__item">
-                <a class="links" href="#">JavaScript</a>
+                <a class="nav__link" href="#">JavaScript</a>
               </li>
               <li class="nav__item">
-                <a class="links" href="#">PHP 7x</a>
+                <a class="nav__link" href="#">PHP 7x</a>
+              </li>
+            </ul>
+
+          </li>
+
+          <li class="nav__items">
+            <a class="nav__links" href="#">
+              Base de datos
+              <span> 
+                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+
+            <ul class="nav__children">
+              <li class="nav__item">
+                <a class="nav__link" href="#">MySQL</a>
               </li>
             </ul>
           </li>
 
-          <li class="nav__item">
-            <a class="links" href="#">Base de datos</a>
-            <ul class="nav">
+          <li class="nav__items">
+            <a class="nav__links" href="#">
+              Frameworks
+              <span> 
+                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+            
+            <ul class="nav__children">
               <li class="nav__item">
-                <a class="links" href="#">MySQL</a>
+                <a class="nav__link" href="#">Booststrap</a>
               </li>
             </ul>
           </li>
 
-          <li class="nav__item">
-            <a class="links" href="#">Frameworks</a>
-            <ul class="nav">
+          <li class="nav__items">
+            <a class="nav__links" href="#">
+              Control de versiones
+              <span> 
+                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+            
+            <ul class="nav__children">
               <li class="nav__item">
-                <a class="links" href="#">Booststrap</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav__item">
-            <a class="links" href="#">Control de versiones</a>
-            <ul class="nav">
-              <li class="nav__item">
-                <a class="links" href="#">Gut</a>
+                <a class="nav__link" href="#">Git</a>
               </li>
               <li class="nav__item">
-                <a class="links" href="#">GitHub</a>
+                <a class="nav__link" href="#">GitHub</a>
               </li>
             </ul>
           </li>
         </ul>
+        
       </div>
+      
+      <img class="skills__img" src="./assets/images/habilidades duras.png" alt="undraw programming" >
     </section>
 
-    <section id="proyectos" class="section__proyecto">
-      <h2>Proyectos</h2>
+    <section id="projects" class="projects">
+      <h2 class="projects__title">Proyectos</h2>
       <div class="cards">
         <div class="card">
-          <h3>Notaries digital</h3>
-          <p>
+          <h3 class="card__title">Notaries digital</h3>
+          <p class="card__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
             itaque. Dolor laborum modi dolores expedita? Nemo, quo? Voluptatem
             tempora minima soluta beatae vel cupiditate, quisquam nobis unde
@@ -168,8 +179,8 @@
         </div>
 
         <div class="card">
-          <h3>Pavesmate</h3>
-          <p>
+          <h3 class="card__title">Pavesmate</h3>
+          <p class="card__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
             itaque. Dolor laborum modi dolores expedita? Nemo, quo? Voluptatem
             tempora minima soluta beatae vel cupiditate, quisquam nobis unde
@@ -178,8 +189,8 @@
         </div>
 
         <div class="card">
-          <h3>Frontend Metor</h3>
-          <p>
+          <h3 class="card__title">Frontend Metor</h3>
+          <p class="card__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
             itaque. Dolor laborum modi dolores expedita? Nemo, quo? Voluptatem
             tempora minima soluta beatae vel cupiditate, quisquam nobis unde
@@ -187,28 +198,23 @@
           </p>
         </div>
       </div>
-    </section>
-
-    <section id="formacion" class="section__formacion">
-      <div class="container">
-        <h2>Formación</h2>
-        <ul>
-          <li><a href="#">Ingenieria en Sistemas y Redes Informáticas</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Tecnicon en acuicultura</a></li>
-        </ul>
-      </div>
-      <img src="./assets/images/Graduacion.svg" alt="graduacion">
     </section>
 
     <footer id="contactame" class="footer">
       <h2 class="footer__title">Contactame</h2>
-      <p class="footer__paragrahp">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab porro
-        neque fugiat, vitae nesciunt nostrum animi, veritatis necessitatibus
-        itaque at tenetur dolore quam est eius. Unde nihil enim quo.
-      </p>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
  
   </article>
