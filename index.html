@@ -30,9 +30,10 @@
         <div class="navbar__themes">
           <i id="iconTheme" class="fa-solid fa-sun"></i>
           <label for="btnCheckbox" class="navbar__theme" id="btnTheme">
-             Theme light
+            Tema claro
           </label>
         </div>
+        
         <input id="checkboxMenu" type="checkbox">
 
         <label id="btnMenu" class="navbar__icon__container" for="checkboxMenu">
@@ -83,78 +84,102 @@
     <section id="skills" class="skills">
 
       <div class="skills__container">
-        <h3 class="skills__title">Conocimientos</h3>
+        <h3 class="skills__title">Habilidades</h3>
 
         <ul class="nav">
           <li class="nav__items">
-            <a class="nav__links" href="#">
-              Leguajes 
+            <a id="leguajes" class="nav__links" href="#leguaje__chil">
+              LENGUAJE DE MARCADO / ESTILO 
               <span> 
-                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+                <img id="icon__leguajes" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
             </a>
 
-            <ul class="nav__children">
+            <ul id="leguaje__chil" class="nav__children">
               <li class="nav__item">
-                <a class="nav__link" href="#">HTML5</a>
+                <p class="nav__link">HTML5</p>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">CSS3</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">JavaScript</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">PHP 7x</a>
+                <p class="nav__link">CSS3</p>
               </li>
             </ul>
 
           </li>
 
           <li class="nav__items">
-            <a class="nav__links" href="#">
-              Base de datos
+            <a id="frameworks" class="nav__links" href="#frameworks__chil">
+              CSS Frameworks
               <span> 
-                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
-              </span>
-            </a>
-
-            <ul class="nav__children">
-              <li class="nav__item">
-                <a class="nav__link" href="#">MySQL</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav__items">
-            <a class="nav__links" href="#">
-              Frameworks
-              <span> 
-                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+                <img id="icon__framework" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
             </a>
             
-            <ul class="nav__children">
+            <ul id="frameworks__chil" class="nav__children">
               <li class="nav__item">
-                <a class="nav__link" href="#">Booststrap</a>
+                <p class="nav__link">Booststrap</p>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__items">
+            <a id="frameworks" class="nav__links" href="#frameworks__chil">
+              PREPROCESADOR DE CSS
+              <span> 
+                <img id="icon__framework" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+            
+            <ul id="frameworks__chil" class="nav__children">
+              <li class="nav__item">
+                <p class="nav__link">SASS</p>
               </li>
             </ul>
           </li>
 
           <li class="nav__items">
-            <a class="nav__links" href="#">
+            <a id="DB" class="nav__links" href="#DB__chil">
+              LEGUAJE DE PROGRAMACION
+              <span> 
+                <img id="icon__db" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+
+            <ul id="DB__chil" class="nav__children">
+              <li class="nav__item">
+                <p class="nav__link">JavaScript</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__items">
+            <a id="DB" class="nav__links" href="#DB__chil">
+              JavaScript Frameworks
+              <span> 
+                <img id="icon__db" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+
+            <ul id="DB__chil" class="nav__children">
+              <li class="nav__item">
+                <p class="nav__link">React</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__items">
+            <a id="CV" class="nav__links" href="#CV__chil">
               Control de versiones
               <span> 
-                <img src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+                <img id="icon__cv" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
             </a>
             
-            <ul class="nav__children">
+            <ul id="CV__chil" class="nav__children">
               <li class="nav__item">
-                <a class="nav__link" href="#">Git</a>
+                <p class="nav__link">Git</p>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">GitHub</a>
+                <p class="nav__link">GitHub</p>
               </li>
             </ul>
           </li>
@@ -202,15 +227,15 @@
 
     <footer id="contactame" class="footer">
       <h2 class="footer__title">Contactame</h2>
-      <ul>
-        <li>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <ul class="footer__navbar">
+        <li class="footer__links">
+          <a target="_blank" class="footer__link" href="https://www.facebook.com/jonatan.morales.3572846/"><i class="fa-brands fa-facebook"></i></a>
         </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <li class="footer__links">
+          <a target="_blank" class="footer__link" href="https://www.linkedin.com/in/devjonatanmo/"><i class="fa-brands fa-linkedin"></i></a>
         </li>
-        <li>
-          <a href="#">
+        <li class="footer__links">
+          <a target="_blank" class="footer__link" href="https://github.com/DevJonatanMorales">
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
