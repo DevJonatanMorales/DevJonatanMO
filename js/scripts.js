@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', e => {
-  
+
   /*
   * animation navbar
   */
@@ -13,20 +13,20 @@ window.addEventListener('DOMContentLoaded', e => {
   /*
   * themes
   */
-
   const themeLight = "TEMA CLARO";
   const themeDark = "TEMA OSCURO";
 
-  //btn temas
-
+  // * btn temas
   let iconTheme = document.getElementById("iconTheme");
   let isBtnCheckbox = document.getElementById("btnCheckbox");
 
-  //btn menu
-
+  // * btn menu
   let btnMenu = document.getElementById("btnMenu");
   let btnCheckboxMenu = document.getElementById("checkboxMenu");
   let items = document.getElementById("items");
+
+  // * acordion
+  let item__skills = document.getElementsByClassName('nav__links');
 
   const navbarShrink = () => {
 
@@ -49,6 +49,14 @@ window.addEventListener('DOMContentLoaded', e => {
     }
   }
 
+  const activeAcordion = (element) => {
+    if (element.classList.contains("nav__children-active")) {
+      element.classList.remove("nav__children-active");
+    } else {
+      element.classList.add("nav__children-active");
+    }
+  }
+
   btnTheme.addEventListener("click", () => {
     document.getElementById("body").classList.toggle("theme");
   
@@ -64,68 +72,25 @@ window.addEventListener('DOMContentLoaded', e => {
   
     }
   });
-  
+
+  btnMenu.addEventListener("click", () => {
+    if (btnCheckboxMenu.checked == true) {
+      items.classList.add("navbar__items-active");
+    } else {
+      items.classList.remove("navbar__items-active");
+    }
+  });
+
+  for (let i = 0; i < item__skills.length; i++) {
+    item__skills[i].addEventListener("click", () => {
+      item__skills[i].classList.remove("nav__children-active");
+      activeAcordion(item__skills[i].nextElementSibling);
+     
+    })
+    
+  }
+
   navbarShrink();
   document.addEventListener('scroll', navbarShrink);
 
 });
-
-/* const themeLight = "TEMA CLARO";
-const themeDark = "TEMA OSCURO";
-
-//btn temas
-
-let btnTheme = document.getElementById("btnTheme");
-let iconTheme = document.getElementById("iconTheme");
-let isBtnCheckbox = document.getElementById("btnCheckbox");
-
-//btn menu
-
-let btnMenu = document.getElementById("btnMenu");
-let btnCheckboxMenu = document.getElementById("checkboxMenu");
-let items = document.getElementById("items");
-
-//btn acordion
-
-const leguajes = document.getElementById("leguajes");
-const DB = document.getElementById("DB");
-const frameworks = document.getElementById("frameworks");
-const CV = document.getElementById("CV");
-
-
-
-btnMenu.addEventListener("click", () => {
-  if (btnCheckboxMenu.checked == true) {
-    items.classList.add("navbar__items-active");
-  } else {
-    items.classList.remove("navbar__items-active");
-  }
-});
-
-leguajes.addEventListener("click", () => {
-  document
-    .getElementById("leguaje__chil")
-    .classList.toggle("nav__children-active");
-  document
-    .getElementById("icon__leguajes")
-    .classList.toggle("nav__icon-active");
-});
-
-DB.addEventListener("click", () => {
-  document.getElementById("DB__chil").classList.toggle("nav__children-active");
-  document.getElementById("icon__db").classList.toggle("nav__icon-active");
-});
-
-frameworks.addEventListener("click", () => {
-  document
-    .getElementById("frameworks__chil")
-    .classList.toggle("nav__children-active");
-  document
-    .getElementById("icon__framework")
-    .classList.toggle("nav__icon-active");
-});
-
-CV.addEventListener("click", () => {
-  document.getElementById("CV__chil").classList.toggle("nav__children-active");
-  document.getElementById("icon__cv").classList.toggle("nav__icon-active");
-}); */

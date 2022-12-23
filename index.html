@@ -43,7 +43,7 @@
 
       <ul id="items" class="navbar__items">
         <li class="navbar__item">
-          <a class="navbar__link" id="about" href="#about">SOBRE MI</a>
+          <a class="navbar__link" id="about" href="#yo">SOBRE MI</a>
         </li>
         <li class="navbar__item">
           <a class="navbar__link" id="skills" href="#habilidades">CONOCIMIENTOS</a>
@@ -58,44 +58,63 @@
     </nav>
 
     
-    <header id="header" class="header">
-      <img class="header__avatar" src="./assets/images/YO.jpeg" alt="Foto de perfil" >
-      <h2 class="header__title">
+    <header id="header" class="section section__bgColor">
+      <img class="section__avatar" src="./assets/images/YO.jpeg" alt="Foto de perfil" >
+      <h2 class="section__name">
         Jonatan Isai <wbr> Morales Orellana <wbr>
-        <span class="header__subTitulo"> Developer <wbr> Front-End | Junior </span>
+        <span class="section__subName"> Developer <wbr> Front-End | Junior </span>
       </h2>
     </header>
 
-    <section id="about" class="about">
-      <div class="about__container">
-        <h2 class="about__title">Sobre Mi</h2>
-        <p class="about__paragrahp">
-          Estudiante en ing. en sistemas y redes informáticas, busco
-          oportunidad para adquirir experiencia en el desarrollo front-end o
-          desarrollo de aplicaciones moviles para android; Busco siempre
+    <section id="yo" class="section">
+      <img class="section__img" src="./assets/images/undraw_programming.svg" alt="undraw programming" >
+      <div class="section__container">
+        <h2 class="section__title">Sobre Mi</h2>
+        <p class="section__text">
+          Ingeniero en sistemas y redes informáticas graduado de la Universidad Gerardo Barrios El Salvador Usulután, aficionado por el desarrollo web, busco
+          oportunidad para adquirir experiencia en el desarrollo front-end; Busco siempre
           trabajar en equipo, cooperando con todos y apoyando de la mejor
           manera posible, siendo respoble y puntual.
         </p>
       </div>
-      <img class="about__img" src="./assets/images/undraw_programming.svg" alt="undraw programming" >
+      
       <!-- <a href="#">Descargar curriculom</a> -->
     </section>
 
-    <section id="skills" class="skills">
+    <section id="habilidades" class="section section__bgColor">
 
-      <div class="skills__container">
-        <h3 class="skills__title">Habilidades</h3>
+      <div class="section__container">
+        <h3 class="section__title">Habilidades</h3>
 
         <ul class="nav">
+
           <li class="nav__items">
             <a id="leguajes" class="nav__links" href="#leguaje__chil">
-              LENGUAJE DE MARCADO / ESTILO 
+              LANGUAGE 
               <span> 
                 <img id="icon__leguajes" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
             </a>
 
-            <ul id="leguaje__chil" class="nav__children">
+            <ul id="leguaje__chil" class="nav__children ">
+              <li class="nav__item">
+                <p class="nav__link">SPANISH</p>
+              </li>
+              <li class="nav__item">
+                <p class="nav__link">BASIC ENGLISH</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__items">
+            <a id="leguajes" class="nav__links" href="#leguaje__chil">
+              MARKUP/STYLING LANGUAGE 
+              <span> 
+                <img id="icon__leguajes" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+
+            <ul id="leguaje__chil" class="nav__children ">
               <li class="nav__item">
                 <p class="nav__link">HTML5</p>
               </li>
@@ -108,7 +127,7 @@
 
           <li class="nav__items">
             <a id="frameworks" class="nav__links" href="#frameworks__chil">
-              CSS Frameworks
+              CSS FRAMEWORKS
               <span> 
                 <img id="icon__framework" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
@@ -123,7 +142,7 @@
           
           <li class="nav__items">
             <a id="frameworks" class="nav__links" href="#frameworks__chil">
-              PREPROCESADOR DE CSS
+              CSS PREPROCESSOR 
               <span> 
                 <img id="icon__framework" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
@@ -138,7 +157,7 @@
 
           <li class="nav__items">
             <a id="DB" class="nav__links" href="#DB__chil">
-              LEGUAJE DE PROGRAMACION
+              PROGRAMMING LANGUAGE
               <span> 
                 <img id="icon__db" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
@@ -168,7 +187,7 @@
 
           <li class="nav__items">
             <a id="CV" class="nav__links" href="#CV__chil">
-              Control de versiones
+              VERSION CONTROL
               <span> 
                 <img id="icon__cv" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
               </span>
@@ -176,22 +195,23 @@
             
             <ul id="CV__chil" class="nav__children">
               <li class="nav__item">
-                <p class="nav__link">Git</p>
+                <p class="nav__link">GitHub</p>
               </li>
               <li class="nav__item">
-                <p class="nav__link">GitHub</p>
+                <p class="nav__link">Git</p>
               </li>
             </ul>
           </li>
+
         </ul>
         
       </div>
       
-      <img class="skills__img" src="./assets/images/habilidades duras.png" alt="undraw programming" >
+      <img class="section__img" src="./assets/images/habilidades duras.png" alt="undraw programming" >
     </section>
 
-    <section id="projects" class="projects">
-      <h2 class="projects__title">Proyectos</h2>
+    <section id="proyectos" class="section section__column">
+      <h2 class="section__title">Proyectos</h2>
       <div class="cards">
         <div class="card">
           <h3 class="card__title">Notaries digital</h3>
@@ -225,17 +245,17 @@
       </div>
     </section>
 
-    <footer id="contactame" class="footer">
-      <h2 class="footer__title">Contactame</h2>
-      <ul class="footer__navbar">
-        <li class="footer__links">
-          <a target="_blank" class="footer__link" href="https://www.facebook.com/jonatan.morales.3572846/"><i class="fa-brands fa-facebook"></i></a>
+    <footer id="contactame" class="section__column section-short section__bgColor">
+      <h2 class="section__title">Contactame</h2>
+      <ul class="section__navbar">
+        <li class="section__links">
+          <a target="_blank" class="section__link" href="https://www.facebook.com/jonatan.morales.3572846/"><i class="fa-brands fa-facebook"></i></a>
         </li>
-        <li class="footer__links">
-          <a target="_blank" class="footer__link" href="https://www.linkedin.com/in/devjonatanmo/"><i class="fa-brands fa-linkedin"></i></a>
+        <li class="section__links">
+          <a target="_blank" class="section__link" href="https://www.linkedin.com/in/devjonatanmo/"><i class="fa-brands fa-linkedin"></i></a>
         </li>
-        <li class="footer__links">
-          <a target="_blank" class="footer__link" href="https://github.com/DevJonatanMorales">
+        <li class="section__links">
+          <a target="_blank" class="section__link" href="https://github.com/DevJonatanMorales">
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
