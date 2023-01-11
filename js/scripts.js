@@ -10,12 +10,6 @@ window.addEventListener('DOMContentLoaded', e => {
   const projects = document.getElementById('projects');
   const contact = document.getElementById('contact');
 
-  /*
-  * themes
-  */
-  const themeLight = "TEMA CLARO";
-  const themeDark = "TEMA OSCURO";
-
   // * btn temas
   let iconTheme = document.getElementById("iconTheme");
   let isBtnCheckbox = document.getElementById("btnCheckbox");
@@ -32,23 +26,16 @@ window.addEventListener('DOMContentLoaded', e => {
 
     if (window.scrollY === 0) {
       mainNavbar.classList.remove('navbar-shrink');
-      btnTheme.classList.remove('navbar____theme-shrink');
-      
-      about.classList.remove('navbar__link-shrink');
-      skills.classList.remove('navbar__link-shrink');
-      projects.classList.remove('navbar__link-shrink');
-      contact.classList.remove('navbar__link-shrink');
     } else {
       mainNavbar.classList.add('navbar-shrink');
-      btnTheme.classList.add('navbar____theme-shrink');
       
-      about.classList.add('navbar__link-shrink');
-      skills.classList.add('navbar__link-shrink');
-      projects.classList.add('navbar__link-shrink');
-      contact.classList.add('navbar__link-shrink');
     }
   }
 
+  
+  /*
+  * themes
+  */
   const activeAcordion = (element) => {
     if (element.classList.contains("nav__children-active")) {
       element.classList.remove("nav__children-active");
@@ -61,12 +48,10 @@ window.addEventListener('DOMContentLoaded', e => {
     document.getElementById("body").classList.toggle("theme");
   
     if (isBtnCheckbox.checked == true) {
-      btnTheme.innerText = themeLight;
       iconTheme.classList.remove("fa-moon");
       iconTheme.classList.add("fa-sun");
   
     } else {
-      btnTheme.innerText = themeDark;
       iconTheme.classList.remove("fa-sun");
       iconTheme.classList.add("fa-moon");
   
