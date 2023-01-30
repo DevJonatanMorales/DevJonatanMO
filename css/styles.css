@@ -102,6 +102,9 @@ body {
   transition: font-size 0.3s;
   border-radius: 12px;
 }
+.navbar__link-banner {
+  font-size: 1.5rem;
+}
 .navbar-shrink {
   position: fixed;
   top: 0;
@@ -133,9 +136,13 @@ body {
     flex-direction: column;
   }
   .navbar__container {
+    display: flex;
+    align-items: center;
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: 2000;
+    margin: 0;
   }
   .navbar__items {
     top: -240px;
@@ -406,4 +413,6 @@ body {
   .navbar__link:hover {
     color: var(--primary-colors);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
