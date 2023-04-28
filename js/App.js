@@ -66,9 +66,21 @@ window.addEventListener('DOMContentLoaded', e => {
     }
   });
 
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar__icon__container');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('.navbar__items .navbar__link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
+  });
+
   for (let i = 0; i < item__skills.length; i++) {
     item__skills[i].addEventListener("click", () => {
-      item__skills[i].classList.remove("nav__children-active");
       activeAcordion(item__skills[i].nextElementSibling);
      
     })

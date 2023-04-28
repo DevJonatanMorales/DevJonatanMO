@@ -399,6 +399,7 @@ body {
 .cards {
     display: flex;
     justify-content: space-between;
+    width: 90%;
     
     @media (max-width: variables.$TABLETS) {
         flex-direction: column;

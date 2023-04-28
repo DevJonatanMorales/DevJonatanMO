@@ -27,13 +27,13 @@
 
         <div class="navbar__container">
           <a class="navbar__link navbar__link-banner" id="about" href="#header">DevJonatanMO</a>
-  
+
           <input id="checkboxMenu" type="checkbox">
           <label id="btnMenu" class="navbar__icon__container" for="checkboxMenu">
             <i class="fa-solid fa-bars"></i>
           </label>
         </div>
-  
+
         <ul id="items" class="navbar__items">
           <li class="navbar__item">
             <a class="navbar__link" id="about" href="#yo">SOBRE MI</a>
@@ -50,7 +50,7 @@
         </ul>
       </nav>
     </header>
-  
+
     <section id="header" class="section section__bgColor">
       <img class="section__avatar" src="./assets/images/YO.jpeg" alt="Foto de perfil">
       <h2 class="section__name">
@@ -60,7 +60,7 @@
     </section>
 
     <section id="yo" class="section">
-      <img class="section__img" src="./assets/images/undraw_programming.svg" alt="undraw programming">
+      <img class="section__img" src="./assets/images/undraw_feeling_proud.svg" alt="undraw feeling proud">
       <div class="section__container">
         <h2 class="section__title">Sobre Mi</h2>
         <p class="section__text">
@@ -165,6 +165,24 @@
               <li class="nav__item">
                 <p class="nav__link">Booststrap</p>
               </li>
+              <li class="nav__item">
+                <p class="nav__link">React</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__items">
+            <a id="DB" class="nav__links" href="#DB__chil">
+              DATABASE
+              <span>
+                <img id="icon__db" class="nav__icon" src="./assets/icons/icon-arrow-down.svg" alt="icon arrow down">
+              </span>
+            </a>
+
+            <ul id="DB__chil" class="nav__children">
+              <li class="nav__item">
+                <p class="nav__link">MySQL</p>
+              </li>
             </ul>
           </li>
 
@@ -190,41 +208,47 @@
 
       </div>
 
-      <img class="section__img" src="./assets/images/habilidades duras.png" alt="undraw programming">
+      <img class="section__img" src="./assets/images/undraw_programming.svg" alt="undraw programming">
     </section>
 
     <section id="proyectos" class="section section__column">
       <h2 class="section__title">Proyectos</h2>
       <div class="cards">
+
         <div class="card">
-          <h3 class="card__title">Notaries digital</h3>
+          <img class="card__img" src="./assets/images/frontendmentor.png" alt="imagen frontendmentor">
+          <h3 class="card__title">Desafios Frontend Metor</h3>
           <p class="card__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-            itaque. Dolor laborum modi dolores expedita? Nemo, quo? Voluptatem
-            tempora minima soluta beatae vel cupiditate, quisquam nobis unde
-            optio? Quidem, porro?
+            Ayuda a mejorar las habilidades de front-end mediante la creación de proyectos reales. Resuelva los desafíos
+            de HTML, CSS y JavaScript del mundo real mientras trabaja con diseños profesionales.
           </p>
+          <a class="card__btn" href="https://www.frontendmentor.io/home">Ir</a>
         </div>
 
         <div class="card">
-          <h3 class="card__title">Pavesmate</h3>
-          <p class="card__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-            itaque. Dolor laborum modi dolores expedita? Nemo, quo? Voluptatem
-            tempora minima soluta beatae vel cupiditate, quisquam nobis unde
-            optio? Quidem, porro?
-          </p>
+          <img class="card__img" src="./assets/images/ValidacionFormulario.png" alt="">
+          <h3 class="card__title">
+            Validacion de formulario
+          </h3>
+          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/formvalidation.git">Ver en
+            GitHub</a>
+          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/formvalidation/">
+            <i class="fa-solid fa-eye"></i>
+          </a>
         </div>
 
         <div class="card">
-          <h3 class="card__title">Frontend Metor</h3>
-          <p class="card__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-            itaque. Dolor laborum modi dolores expedita? Nemo, quo? Voluptatem
-            tempora minima soluta beatae vel cupiditate, quisquam nobis unde
-            optio? Quidem, porro?
-          </p>
+          <img class="card__img" src="./assets/images/rickandmortyApi.png" alt="">
+          <h3 class="card__title">
+            Rickandmorty Api
+          </h3>
+          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/RickandmortyApi.git">Ver en
+            GitHub</a>
+          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/RickandmortyApi/">
+            <i class="fa-solid fa-eye"></i>
+          </a>
         </div>
+
       </div>
     </section>
 
@@ -259,7 +283,7 @@
 
   </article>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/App.js"></script>
 </body>
 
 </html>
