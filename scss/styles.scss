@@ -37,6 +37,7 @@ body.theme {
     right: 0;
 
 }
+
 #btnCheckbox,
 #checkboxMenu {
     display: none;
@@ -88,7 +89,7 @@ body {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        height:auto;
+        height: auto;
         color: var(--color-text);
     }
 
@@ -103,7 +104,7 @@ body {
         transition: font-size 0.3s;
         border-radius: 12px;
 
-        &-banner{
+        &-banner {
             font-size: 1.5rem;
         }
     }
@@ -115,12 +116,12 @@ body {
         transition: height 0.3s;
     }
 
-    &____theme-shrink {   
+    &____theme-shrink {
         transition: font-size 0.3s;
         font-size: 1rem;
     }
 
-    &__link-shrink {   
+    &__link-shrink {
         transition: font-size 0.3s;
         font-size: 1rem;
     }
@@ -129,6 +130,7 @@ body {
         &__theme {
             font-size: 16px;
         }
+
         &__link {
             padding: 0.2rem 0.2rem;
             margin: auto 0.5rem;
@@ -140,7 +142,7 @@ body {
         height: 70px;
         position: fixed;
         flex-direction: column;
-    
+
         &__container {
             display: flex;
             align-items: center;
@@ -151,7 +153,7 @@ body {
             margin: 0;
         }
 
-        &__items{
+        &__items {
             top: -240px;
             position: relative;
             padding: 0;
@@ -164,7 +166,7 @@ body {
             z-index: 1000;
         }
 
-        &__icon__container{
+        &__icon__container {
             display: block;
             font-size: 35px;
             color: var(--color-title);
@@ -172,10 +174,10 @@ body {
             cursor: pointer;
         }
 
-        &__items-active{
+        &__items-active {
             top: 100%;
         }
-        
+
         &__item {
             height: 60px;
             padding: 10px 0;
@@ -263,7 +265,7 @@ body {
         font-weight: 500;
         font-size: 18px;
     }
-    
+
     &__avatar {
         max-width: 300px;
         width: 100%;
@@ -286,8 +288,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around
-        ;
+        justify-content: space-around;
 
     }
 
@@ -312,11 +313,11 @@ body {
         &__container {
             width: 100%;
         }
-        
+
         &__img {
             width: 100%;
         }
-        
+
         &__avatar {
             margin-right: 0;
         }
@@ -382,10 +383,10 @@ body {
         transition: display 0.1s;
     }
 
-    &__icon {        
+    &__icon {
         height: 10px;
     }
-    
+
     &__icon-active {
         transform: rotate(-180deg);
     }
@@ -399,12 +400,13 @@ body {
 .cards {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    
+    width: 80%;
+
     @media (max-width: variables.$TABLETS) {
         flex-direction: column;
     }
 }
+
 .card {
     background-color: var(--bg-container);
     padding: 1rem 1.5rem;
@@ -427,8 +429,9 @@ body {
         font-weight: 500;
         font-size: 16px;
     }
-    
+
 }
+
 .footer {
     background-color: var(--bg-container);
     padding: 2.5rem 1.5rem;
@@ -445,7 +448,7 @@ body {
         margin-top: 0;
     }
 
-    
+
 
 }
 
@@ -453,9 +456,9 @@ body {
     .section__link:hover {
         color: var(--primary-colors);
     }
+
     .navbar__link:hover {
         color: var(--primary-colors);
-        
+
     }
 }
-  
