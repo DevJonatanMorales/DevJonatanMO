@@ -199,7 +199,7 @@ body {
 .section {
     min-height: 850px;
     height: auto;
-    padding: 5rem 2rem;
+    padding: 5rem 8rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -398,9 +398,11 @@ body {
 }
 
 .cards {
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 
     @media (max-width: variables.$TABLETS) {
         flex-direction: column;
@@ -408,11 +410,22 @@ body {
 }
 
 .card {
+    width: 100%;
+    max-width: 325px;
+    height: 450px;
     background-color: var(--bg-container);
     padding: 1rem 1.5rem;
     margin: 0.5rem;
     border-radius: 12px;
     box-shadow: 2px 2px 5px var(--border-colors);
+
+    &__img {
+        width: 100%;
+        height: 130px;
+        border-radius: 10px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
 
     &__title {
         color: var(--color-title);
@@ -430,11 +443,28 @@ body {
         font-size: 16px;
     }
 
+    &__btn {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 12px;
+        padding: 8px;
+        background-color: var(--border-colors);
+        text-decoration: none;
+        text-align: center;
+        color: var(--color-title);
+        font-family: variables.$text;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+
 }
 
 .footer {
-    background-color: var(--bg-container);
-    padding: 2.5rem 1.5rem;
+    height: 200px;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -459,6 +489,9 @@ body {
 
     .navbar__link:hover {
         color: var(--primary-colors);
+    }
 
+    .card__btn:hover {
+        background-color: var(--primary-colors);
     }
 }

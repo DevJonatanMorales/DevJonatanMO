@@ -39,10 +39,10 @@
             <a class="navbar__link" id="about" href="#yo">SOBRE MI</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" id="skills" href="#habilidades">CONOCIMIENTOS</a>
+            <a class="navbar__link" id="projects" href="#proyectos">PROYECTOS</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" id="projects" href="#proyectos">PROYECTOS</a>
+            <a class="navbar__link" id="skills" href="#habilidades">CONOCIMIENTOS</a>
           </li>
           <li class="navbar__item">
             <a class="navbar__link" id="contact" href="#contactame">CONTÁCTAME</a>
@@ -51,15 +51,15 @@
       </nav>
     </header>
 
-    <section id="header" class="section section__bgColor">
+    <section id="header" class="section ">
       <img class="section__avatar" src="./assets/images/YO.jpeg" alt="Foto de perfil">
       <h2 class="section__name">
         Jonatan Isai <wbr> Morales Orellana <wbr>
-        <span class="section__subName"> Developer <wbr> Front-End | Junior </span>
+        <span class="section__subName"> React Developer <wbr> | Junior </span>
       </h2>
     </section>
 
-    <section id="yo" class="section">
+    <section id="yo" class="section section__bgColor">
       <img class="section__img" src="./assets/images/undraw_feeling_proud.svg" alt="undraw feeling proud">
       <div class="section__container">
         <h2 class="section__title">Sobre Mi</h2>
@@ -73,6 +73,57 @@
       </div>
 
       <!-- <a href="#">Descargar curriculom</a> -->
+    </section>
+
+    <section id="proyectos" class="section section__column ">
+      <h2 class="section__title">Proyectos</h2>
+      <div class="cards">
+
+        <div class="card">
+          <img class="card__img" src="./assets/images/eCommerce.png" alt="eCommerce">
+          <h3 class="card__title">eCommerce</h3>
+          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/eCommerce.git">Ver en
+            GitHub</a>
+          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/eCommerce/">
+            <i class="fa-solid fa-eye"></i>
+          </a>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="./assets/images/ValidacionFormulario.png" alt="">
+          <h3 class="card__title">
+            Validacion de formulario
+          </h3>
+          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/formvalidation.git">Ver en
+            GitHub</a>
+          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/formvalidation/">
+            <i class="fa-solid fa-eye"></i>
+          </a>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="./assets/images/rickandmortyApi.png" alt="">
+          <h3 class="card__title">
+            Rickandmorty Api
+          </h3>
+          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/RickandmortyApi.git">Ver en
+            GitHub</a>
+          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/RickandmortyApi/">
+            <i class="fa-solid fa-eye"></i>
+          </a>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="./assets/images/frontendmentor.png" alt="imagen frontendmentor">
+          <h3 class="card__title">Desafios Frontend Metor</h3>
+          <p class="card__paragraph">
+            Ayuda a mejorar las habilidades de front-end mediante la creación de proyectos reales. Resuelva los desafíos
+            de HTML, CSS y JavaScript del mundo real mientras trabaja con diseños profesionales.
+          </p>
+          <a class="card__btn" target="_blank" href="https://www.frontendmentor.io/home">Ir</a>
+        </div>
+
+      </div>
     </section>
 
     <section id="habilidades" class="section section__bgColor">
@@ -211,58 +262,8 @@
       <img class="section__img" src="./assets/images/undraw_programming.svg" alt="undraw programming">
     </section>
 
-    <section id="proyectos" class="section section__column">
-      <h2 class="section__title">Proyectos</h2>
-      <div class="cards">
 
-        <div class="card">
-          <img class="card__img" src="./assets/images/frontendmentor.png" alt="imagen frontendmentor">
-          <h3 class="card__title">Desafios Frontend Metor</h3>
-          <p class="card__paragraph">
-            Ayuda a mejorar las habilidades de front-end mediante la creación de proyectos reales. Resuelva los desafíos
-            de HTML, CSS y JavaScript del mundo real mientras trabaja con diseños profesionales.
-          </p>
-          <a class="card__btn" href="https://www.frontendmentor.io/home">Ir</a>
-        </div>
-
-        <div class="card">
-          <img class="card__img" src="./assets/images/ValidacionFormulario.png" alt="">
-          <h3 class="card__title">
-            Validacion de formulario
-          </h3>
-          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/formvalidation.git">Ver en
-            GitHub</a>
-          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/formvalidation/">
-            <i class="fa-solid fa-eye"></i>
-          </a>
-        </div>
-
-        <div class="card">
-          <img class="card__img" src="./assets/images/rickandmortyApi.png" alt="">
-          <h3 class="card__title">
-            Rickandmorty Api
-          </h3>
-          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/RickandmortyApi.git">Ver en
-            GitHub</a>
-          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/RickandmortyApi/">
-            <i class="fa-solid fa-eye"></i>
-          </a>
-        </div>
-
-        <div class="card">
-          <img class="card__img" src="./assets/images/eCommerce.png" alt="eCommerce">
-          <h3 class="card__title">eCommerce</h3>
-          <a class="card__btn" target="_blank" href="https://github.com/DevJonatanMorales/eCommerce.git">Ver en
-            GitHub</a>
-          <a class="card__btn" target="_blank" href="https://devjonatanmorales.github.io/eCommerce/">
-            <i class="fa-solid fa-eye"></i>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <footer id="contactame" class="section__column section-short section__bgColor">
+    <footer id="contactame" class="footer">
       <h2 class="section__title">Contactame</h2>
       <ul class="section__navbar">
         <li class="section__links">
