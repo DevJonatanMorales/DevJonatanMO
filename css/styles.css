@@ -283,6 +283,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 1rem 3rem;
   }
   .section__container {
     width: 100%;
@@ -368,6 +369,7 @@ body {
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -416,6 +418,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+@media (max-width: 600px) {
+  .card {
+    height: auto;
+  }
 }
 
 .footer {
