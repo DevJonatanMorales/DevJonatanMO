@@ -402,7 +402,7 @@ body {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
     width: 100%;
 
     @media (max-width: variables.$TABLETS) {
@@ -497,5 +497,6 @@ body {
 
     .card__btn:hover {
         background-color: var(--primary-colors);
+        color: #EFF3F5;
     }
 }
