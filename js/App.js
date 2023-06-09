@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', e => {
 
   // * btn menu
   let btnMenu = document.getElementById("btnMenu");
-  let btnCheckboxMenu = document.getElementById("checkboxMenu");
   let items = document.getElementById("items");
 
   // * acordion
@@ -28,11 +27,10 @@ window.addEventListener('DOMContentLoaded', e => {
       mainNavbar.classList.remove('navbar-shrink');
     } else {
       mainNavbar.classList.add('navbar-shrink');
-      
+
     }
   }
 
-  
   /*
   * themes
   */
@@ -46,45 +44,42 @@ window.addEventListener('DOMContentLoaded', e => {
 
   btnTheme.addEventListener("click", () => {
     document.getElementById("body").classList.toggle("theme");
-  
+
     if (isBtnCheckbox.checked == true) {
       iconTheme.classList.remove("fa-moon");
       iconTheme.classList.add("fa-sun");
-  
+
     } else {
       iconTheme.classList.remove("fa-sun");
       iconTheme.classList.add("fa-moon");
-  
+
     }
   });
 
   btnMenu.addEventListener("click", () => {
-    if (btnCheckboxMenu.checked == true) {
-      items.classList.add("navbar__items-active");
-    } else {
-      items.classList.remove("navbar__items-active");
-    }
+    btnMenu.classList.toggle('open');
+    items.classList.toggle("navbar__items-active");
   });
 
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector('.navbar__icon__container');
   const responsiveNavItems = [].slice.call(
-      document.querySelectorAll('.navbar__items .navbar__link')
+    document.querySelectorAll('.navbar__items .navbar__link')
   );
   responsiveNavItems.map(function (responsiveNavItem) {
-      responsiveNavItem.addEventListener('click', () => {
-          if (window.getComputedStyle(navbarToggler).display !== 'none') {
-              navbarToggler.click();
-          }
-      });
+    responsiveNavItem.addEventListener('click', () => {
+      if (window.getComputedStyle(navbarToggler).display !== 'none') {
+        navbarToggler.click();
+      }
+    });
   });
 
   for (let i = 0; i < item__skills.length; i++) {
     item__skills[i].addEventListener("click", () => {
       activeAcordion(item__skills[i].nextElementSibling);
-     
+
     })
-    
+
   }
 
   navbarShrink();
